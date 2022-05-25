@@ -1,0 +1,45 @@
+@startuml Juego
+
+class "Habilidad" as Habilidad{
+velocidad: int
+fuerza: int
+resistencia: int
+poder: str
+cant_poder: int
+totem: str
+
+mostrar_habilidad()
+}
+
+class Integrante{
+nombre: str
+alias: str
+especie: str
+ocupacion: str
+habilidades: []
+
+lista_habilidad()
+ficha_tecnica()
+}
+
+class Equipo{
+nombre_equipo: str
+idiologia: str
+integrantes: []
+
+registrar_integrantes()
+mostrar_equipo()
+}
+
+class Enfrentamiento{
+pelea(peleador1, peleador2): return str
+peleadores(equipo1, equipo2)
+mostrar_peleadores(equipo1, equipo2)
+}
+
+Habilidad<|--Integrante
+Habilidad<|--Equipo
+Integrante<|--Equipo
+Equipo<|--Enfrentamiento
+
+@enduml
