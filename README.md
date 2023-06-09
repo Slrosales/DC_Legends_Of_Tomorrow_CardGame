@@ -1,4 +1,4 @@
-# 2do_parcial
+# DC Legends Of Tomorrow Juego de Cartas
 
 ## Funcionales
 - Crear un nuevo Equipo con los atributos de nombre del equipo y su idiología
